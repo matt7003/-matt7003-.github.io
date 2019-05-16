@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <title>상우's 프로젝트</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+
+</head>
+<body>
+<style>
+  p{
+    font-family: 'Jua', sans-serif;
+    font-size: 20px;
+    color: rgb(247, 242, 0);
+    text-align: inherit;
+  }
+  h1{
+            font-family: 'Jua', sans-serif;
+            font-size:60px;
+            color: rgb(247, 242, 0);
+            text-align: center;}
+  h2{
+            font-family: 'Jua', sans-serif;
+            font-size:25px;
+            color: rgb(247, 242, 0);
+            text-align: left;}
+  h3{
+            font-family: 'Jua', sans-serif;
+            font-size:25px;
+            color: rgb(247, 242, 0);
+            text-align: right;}
+  
+  h4{
+            font-family: 'Jua', sans-serif;
+            font-size:30px;
+            color: rgb(0, 77, 244);
+            text-align: center;}
+
+  #text{
+    position: relative;
+    height: 200px;
+  }
+  *{margin:0;padding:0;}
+  ul,li{list-style:none;}
+  #slide{display: inline-block; height:500px; width:750px; position:relative;overflow:hidden;}
+  #slide ul{width:400%;height:200%;transition:1s;}
+  #slide ul:after{content:"";display:block;clear:both;}
+  #slide li{float:left;width:25%;height:100%;}
+  #slide li:nth-child(1){background-image:url('like_lion.png');}
+  #slide li:nth-child(2){background-image:url('surfing.png');}
+  #slide li:nth-child(3){background-image:url('sum2.png');opacity: 0.6;}
+  #slide input{display:none;}
+  #slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
+  #slide .pos{text-align:center;position:absolute;bottom:10px;left:0;width:100%;text-align:center;}
+  #pos1:checked~ul{margin-left:0%;}
+  #pos2:checked~ul{margin-left:-100%;}
+  #pos3:checked~ul{margin-left:-200%;}
+  #pos1:checked~.pos>label:nth-child(1){background:#666;}
+  #pos2:checked~.pos>label:nth-child(2){background:#666;}
+  #pos3:checked~.pos>label:nth-child(3){background:#666;}
+</style>
+<div id="slide">
+  <input type="radio" name="pos" id="pos1" checked>
+  <input type="radio" name="pos" id="pos2">
+  <input type="radio" name="pos" id="pos3">
+  <ul>
+    <li>
+        <h1 style="margin-top: 200px;">상우's 프로젝트</h1>
+    </li>
+    <li>
+          <h2 style="margin-top: 80px; margin-left: 15px;">
+            최근 서핑교육과 관련한 산업들이 빠르게 성장중입니다
+          </h2>
+          <h2 style="margin-top: 105px; margin-left: 30px;">
+            하지만 많은 교육을 겸하고 있는 서핑샵에서는
+          </h2>
+          <h2 style="margin-top: 130px; margin-left: 45px;">
+                체계적인 고객데이터의 수집과 분석을 소홀이 하고있습니다
+          </h2>
+    </li>
+    <li>
+      
+        
+        <h4 style="margin-top : 90px">날씨 DATA + 고객데이터</h4>
+          
+        <h4 style="margin-top : 120px">인공지능을 이용해 서핑교육 및 서핑샵 재방문률을 어떻게 높일지 솔루션을 제공해주는 사이트를 만들어 보고자 합니다.</h4>
+
+        
+    </li>
+  </ul>
+  <p class="pos">
+    <label for="pos1"></label>
+    <label for="pos2"></label>
+    <label for="pos3"></label>
+  </p>
+</div>
+</body>
+</html>
